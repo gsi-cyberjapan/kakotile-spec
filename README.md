@@ -10,14 +10,14 @@ Backup tileset contains old tiles. The backup tile of the original tile at
 ```
 {t}/{z}/{x}/{y}.{ext}
 ```
-is stored as
+shall be stored as
 ```
 {t}/bak/{z}/{x}/{y}.{date}.{ext}
 ```
-where {date} is the modification date (mtime) of the original tile.
+where {date} is the modification date (mtime) of the original tile. A backup tile would normally be generated as a 'sheltered tile' when the tile is overwritten by the newer version. [qdltc](https://github.com/gsi-cyberjapan/qdltc/) behaves as such.
 
 # Kakotile tileset
-Kakotile tileset contains the dates of the backup tiles overwritten in the past. The location and the format of the kakotile tileset are as the following:
+Kakotile tileset contains the dates of the backup tiles at each tile location. The location and the format of the kakotile tileset are as the following:
 
 ## Kakotile location
 If you have
